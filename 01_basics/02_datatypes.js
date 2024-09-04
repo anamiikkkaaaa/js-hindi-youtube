@@ -12,6 +12,4 @@ object
 */
 let age = 5;
 typeof "hi";
-typeof age;
-typeof null;
-typeof undefined;
+console.table([ typeof age, typeof null, typeof undefined ]);
