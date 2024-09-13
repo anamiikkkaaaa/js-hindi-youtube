@@ -14,4 +14,41 @@ if(true){
 //console.log(b)    error
 console.log(c)    // ye print ho jayega
 
-// global scope in node env and browser console is different
+// global scope in node env and browser console is different. 
+
+function one(){
+    const username = "hitesh";
+
+    function two(){
+        const website = "youtube";
+        console.log(username);
+    }
+    // console.log(website);  // will give error as out of scope
+
+    two()
+}
+
+one()
+
+/*
+if(true){
+    const username = "hitesh"
+    if(username === "hitesh"){
+        const website = "youtube"
+        console.log(username + website);
+    }
+    console.log(website);
+}
+console.log(username);
+*/
+
+function addone(num){
+    return num+1
+}
+console.log( addone(5) );
+
+const addtwo = function(num){
+    return num+2
+}
+
+addTwo(5)
