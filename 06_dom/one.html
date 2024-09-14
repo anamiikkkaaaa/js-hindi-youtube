@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM learning </title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class = "bg-black">
+    <div >
+        <h1 id = "title" class = "heading">DOM learning on Chai aur code
+            <span style = "display: none;"> test text </span>
+        </h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p> Lorem ipsum dolor sit amet. </p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+</body>
+</html>
+<!--
+//inspect then window, window.document
+// exaclidraw
+// html : head and body.
+// head: title , meta tags.
+// title: text node
+// meta tags: attribute
+// body : div : attribute
+// div : h1: attribute, text node , p: text node. 
+//The Document Object Model (DOM) is the data representation 
+//of the objects that comprise the structure and content of a 
+document on the web.
+
+The Document Object Model (DOM) is a programming interface for web
+ documents, allowing programs 
+(such as JavaScript) to dynamically access and modify the content,
+ structure, and style of a webpage while it’s being viewed.
+
+Key Concepts of the DOM:
+Representation of a Webpage:
+
+The DOM represents an HTML document as a tree structure where each node 
+is an object that corresponds to a part of
+the document, such as an element, attribute, or piece of text.
+The document itself (HTML file) is the root of the tree, with elements 
+like <html>, <head>, <body>, and their nested child elements forming 
+branches and leaves.
+Tree-Like Structure:
+
+Every element in the HTML document is represented as a node. There are
+ different types of nodes, including:
+Element nodes: HTML elements like <div>, <p>, <h1>, etc.
+Text nodes: The actual text inside HTML tags.
+Attribute nodes: Attributes of HTML elements like class, id, href, etc.
+Dynamic Interaction:
+
+With the DOM, you can access and modify any part of the webpage using 
+JavaScript. For example, you can:
+Change the text of a heading.
+Modify styles (e.g., change colors or sizes).
+Add or remove elements.
+React to user inputs (e.g., button clicks, form submissions).
+The Browser and DOM:
+
+When a web page is loaded, the browser parses the HTML and builds the DOM 
+tree structure. JavaScript can then interact with this tree to make dynamic changes.
+This interaction allows modern websites to update content, respond to user actions, 
+and manage page behavior without needing a full page reload.
+Objects in the DOM:
+
+The document object represents the whole web page and serves as the entry point to 
+interact with any element.
+You can use methods like:
+document.getElementById(id): Find an element by its ID.
+document.querySelector(selector): Find elements using CSS selectors.
+element.innerHTML or element.innerText: Change the content inside an element.
+
+-->
